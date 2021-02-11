@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffc759;
+  /* background-color: #353677; */
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #04c2bd;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  -webkit-clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+  z-index: 4;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 20rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1rem 0.2rem 0.3rem #1c1f1d;
+}
+
+
+.titlecontainer {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+
+
+
+.container {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+
+
+
+.rounded {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.binary {
+  background-color: #ff7b9c;
+  /*background-color: #0b4150;
+  */text-align: center;
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  color: aliceblue;
+  box-shadow: 1rem 1rem 1rem #818181;
+}
+
+#inputBinary {
+  width: 40%;
+  height: 3.5rem;
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  outline: none;
+}
+.title {
+  text-align: center;
+  border-radius: 0.5rem;
+  display: block;
+  width: 29rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+#calculateButton {
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  width: 14rem;
+  height: 4rem;
+  border: none;
+  background-color: #e8e9ed;
+  border-radius: 1rem;
+  font-size: 2rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#calculateButton:active {
+  font-size: 1.5rem;
+  border: 0;
+  background-color: #04c2bd;
+}
+#calculateButton:focus,
+#calculateButton:active {
+  cursor: pointer;
+  border: 0;
+}
+
+#decimalResult, #hexResult {
+  font-size: 3rem;
+}

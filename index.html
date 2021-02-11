@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Binary Calculator</title>
+</head>
+
+<body>
+    
+    
+    <h1 class="h1">Binary Calculator</h1>
+    <div class="container">
+        <div class="binary rounded">
+            <h3 class="title"> Binary Number</h3>
+            <p id="errorMessage"></p>
+            <input id="inputBinary"  oninput="this.value = this.value.replace(/[^0-1.]/g, '');">
+            <button id="calculateButton">Calculate</button>
+        </div>
+        <div class="binary rounded">
+            <h3 class="title">Decimal</h3>
+
+            <p id="decimalValue">=
+            <p id="decimalResult"></p>
+            </p>
+
+        </div>
+        <div class="binary rounded">
+            <h3 class="title">Hexadecimal</h3>
+            <p id="hexadecimalValue">=
+            <p id="hexResult"></p>
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript" src="/script.js"></script>
+
+</html>
