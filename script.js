@@ -10,7 +10,7 @@ let inputValue = document.getElementById("inputBinary").value;
 // Takes input value and converts to Decimal Value and out puts to decimal
 
 if ( inputValue === "" ) {
- errorMessage.innerHTML = "Please input a value";
+ errorMessage.innerHTML = "*Please input a value";
 } else {
     errorMessage.innerHTML = "";
     

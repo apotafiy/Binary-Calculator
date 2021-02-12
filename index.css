@@ -28,22 +28,6 @@ body {
   text-shadow: 1rem 0.2rem 0.3rem #1c1f1d;
 }
 
-
-.titlecontainer {
-  position: absolute;
-  width: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
-
-
-
-
 .container {
   position: absolute;
   width: 50%;
@@ -55,9 +39,6 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-
-
-
 
 .rounded {
   border-radius: 1rem;
@@ -127,7 +108,7 @@ body {
   background-color: #04c2bd;
 }
 #calculateButton:focus,
-#calculateButton:active {
+#calculateButton:hover {
   cursor: pointer;
   border: 0;
 }
@@ -135,3 +116,132 @@ body {
 #decimalResult, #hexResult {
   font-size: 3rem;
 }
+
+/* // Media Queries */
+
+
+/* SMARTPHONES PORTRAIT */
+
+
+@media only screen and (min-width: 280px) {
+.container {
+  width: 75%;
+}
+.h1 {
+  font-size: 2rem;
+  margin-top: 7rem;
+  text-shadow: none;
+}
+.title {
+  font-size: 2rem;
+  width: auto;
+}
+
+.binary {
+  padding: 1rem 0;
+}
+.rounded {
+  margin-bottom: 2rem;
+}
+
+}
+@media only screen and (min-width: 300px) {
+
+  .title {
+    font-size: 2rem;
+    width: auto;
+  }
+
+  .h1 {
+    font-size: 3rem;
+    margin-top: 9rem;
+    text-shadow: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  #inputBinary {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .rounded {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .h1 {
+    margin-top: 10rem;
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+  .h1 {
+    margin-top: 7rem;
+    font-size: 5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    width: auto;
+  }
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+  .h1 {
+    margin-top: 6rem;
+  }
+
+  #inputBinary {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+
+  .container {
+    width: 70%;
+  }
+  .rounded {
+    margin-bottom: 4rem;
+  }
+
+
+}    
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 2560px) {
+
+  .h1 {
+    margin-top: 20rem;
+    font-size: 10rem;
+  }
+
+  #inputBinary {
+    font-size: 2.5rem;
+    width: 40%;
+  }
+
+  .container {
+    width: 40%;
+  }
+
+  .rounded {
+    margin-bottom: 4rem;
+  }
+
+
+}    
+
