@@ -14,6 +14,7 @@ if ( inputValue === "" ) {
 } else {
     errorMessage.innerHTML = "";
     
+    
     let integerOutput = 0;
     const stringArray = inputValue.split('');
     let pow = 0;
