@@ -18,6 +18,7 @@ if ( inputValue === "" ) {
     let integerOutput = 0;
     const stringArray = inputValue.split('');
     let pow = 0;
+    
     for(let i = inputValue.length - 1; i>= 0; i--){
         if(stringArray[i] === '1'){
             integerOutput+= Math.pow(2, pow);
