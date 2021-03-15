@@ -22,10 +22,14 @@ body {
 .h1 {
   text-align: center;
   font-size: 10rem;
-  margin-top: 20rem;
+  margin-top: 10rem;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 1rem 0.2rem 0.3rem #1c1f1d;
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
@@ -67,6 +71,16 @@ body {
   font-weight: 700;
   outline: none;
 }
+
+#inputDecimal {
+  width: 40%;
+  height: 3.5rem;
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  outline: none;
+}
+
 .title {
   text-align: center;
   border-radius: 0.5rem;
@@ -112,6 +126,53 @@ body {
   cursor: pointer;
   border: 0;
 }
+
+
+
+
+
+
+
+#calculateButtonBinary {
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  width: 14rem;
+  height: 4rem;
+  border: none;
+  background-color: #e8e9ed;
+  border-radius: 1rem;
+  font-size: 2rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#calculateButtonBinary:active {
+  font-size: 1.5rem;
+  border: 0;
+  background-color: #04c2bd;
+}
+#calculateButtonBinary:focus,
+#calculateButtonBinary:hover {
+  cursor: pointer;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
 
 #decimalResult, #hexResult {
   font-size: 3rem;
@@ -167,6 +228,11 @@ body {
     width: 90%;
   }
 
+  #inputDecimal {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
   .rounded {
     margin-bottom: 2rem;
   }
@@ -212,6 +278,12 @@ body {
     height: 2.5rem;
   }
 
+  #inputDecimal {
+    font-size: 1.5rem;
+    width: 50%;
+    height: 2.5rem;
+  }
+
   .container {
     width: 60%;
   }
@@ -219,6 +291,9 @@ body {
     margin-bottom: 1rem;
   }
   #calculateButton {
+    height: 3rem;
+  }
+  #calculateButtonBinary {
     height: 3rem;
   }
   .title {
@@ -248,6 +323,11 @@ body {
   }
 
   #inputBinary {
+    font-size: 2.5rem;
+    width: 40%;
+  }
+
+  #inputDecimal {
     font-size: 2.5rem;
     width: 40%;
   }
